@@ -1,24 +1,19 @@
-import java.util.*;
 
 
 public class HelloUser 
 {	
 	
-	public static void main(String[] args) 
+	private String username;
+	
+	
+	public HelloUser(String name) 
 	{
-		String username;
-		Scanner s = new Scanner(System.in);
-		
-		System.out.println("Hello ASE2016 - how are you? :)");
-		System.out.println("Please enter your name: ");
-		username = s.next();
-		greetUser(username);
-		s.close();
+		username = name;
 	}
 	
-	public static void greetUser(String name)
+	public void greetUser()
 	{
-	System.out.println("Hello "+name+"!");
+	System.out.println("Hello "+username+" !");
 	}
 	
 }
